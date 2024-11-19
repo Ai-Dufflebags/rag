@@ -165,6 +165,6 @@ cython_debug/
 .gradio/
 
 # ignore all files in the data folder
-data/*
-vector_db/*
+#data/*
+#vector_db/*
 chroma/
