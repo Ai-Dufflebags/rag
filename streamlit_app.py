@@ -65,7 +65,7 @@ def chat(message, history):
 # And in Gradio:
 
 view = gr.ChatInterface(chat,title="Ask_ICT",
-                    description="Ask ICT about any question about his Youtube contents.",
-                    examples=["What is FVG?", "What is OB?"] 
+                    description="Ask ICT any question about his Youtube contents.",
+                    examples=["What is FVG?", "What is Order Block?", "What is Premium and discount"] 
                     ).launch()
 
