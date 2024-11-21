@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import glob
 from dotenv import load_dotenv
-import gradio as gr
 from openai import OpenAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
@@ -64,8 +63,8 @@ def chat(message, history):
     return result["answer"]
 # And in Gradio:
 
-view = gr.ChatInterface(chat,title="Ask_ICT",
-                    description="Ask ICT any question about his Youtube contents.",
-                    examples=["What is FVG?", "What is Order Block?", "What is Premium and discount"] 
-                    ).launch()
+# view = gr.ChatInterface(chat,title="Ask_ICT",
+#                     description="Ask ICT any question about his Youtube contents.",
+#                     examples=["What is FVG?", "What is Order Block?", "What is Premium and discount"] 
+#                     ).launch()
 
